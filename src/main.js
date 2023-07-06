@@ -19,7 +19,7 @@ import BadgeDirective from 'primevue/badgedirective';
 import BlockUI from 'primevue/blockui';
 import Button from 'primevue/button';
 import Breadcrumb from 'primevue/breadcrumb';
-import Calendar from 'primevue/calendar';
+// import Calendar from 'primevue/calendar';
 import Card from 'primevue/card';
 import CascadeSelect from 'primevue/cascadeselect';
 import Carousel from 'primevue/carousel';
@@ -112,6 +112,9 @@ import 'vuestic-ui/css';
 import vSelect from 'vue-select';
 import 'vue-select/dist/vue-select.css';
 
+import VCalendar from 'v-calendar';
+import 'v-calendar/dist/style.css';
+
 const app = createApp(App);
 
 app.use(PrimeVue, { ripple: true });
@@ -120,6 +123,7 @@ app.use(ToastService);
 app.use(DialogService);
 app.use(router);
 app.use(createVuestic());
+app.use(VCalendar, {});
 
 app.component('VCustomSelect', vSelect);
 
@@ -138,7 +142,7 @@ app.component('Badge', Badge);
 app.component('BlockUI', BlockUI);
 app.component('Breadcrumb', Breadcrumb);
 app.component('Button', Button);
-app.component('Calendar', Calendar);
+// app.component('Calendar', Calendar);
 app.component('Card', Card);
 app.component('Carousel', Carousel);
 app.component('CascadeSelect', CascadeSelect);
